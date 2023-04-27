@@ -7,6 +7,7 @@ import (
 // SOAP 1.1 and SOAP 1.2 must expect different ContentTypes and Namespaces.
 
 const (
+	AppVersion    = "v1.3.3"
 	SoapVersion11 = "1.1"
 	SoapVersion12 = "1.2"
 
@@ -20,7 +21,6 @@ const (
 var (
 	bNamespaceSoap11 = []byte("http://schemas.xmlsoap.org/soap/envelope/")
 	bNamespaceSoap12 = []byte("http://www.w3.org/2003/05/soap-envelope")
-
 )
 
 // Envelope type `xml:"http://schemas.xmlsoap.org/soap/envelope/ Envelope"`
